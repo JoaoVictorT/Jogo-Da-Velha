@@ -1,0 +1,138 @@
+html{
+    width: 100%;
+    height: 100%;
+}
+body{
+    width: 100%;
+    height: 100%;
+    background-color: #c3c3c3;
+    margin: 0;
+}
+main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.jogo_da_velha{
+    width: 35%;
+    height: 60%;
+}
+.jogo_resultado{
+    width: 35%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.15vh;
+    background-color: #c9c9c9;
+    color: #000;
+    margin-top: 2%;
+    border-radius: 1vh;
+}
+.jogo_botao{
+    width: 35%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #c9c9c9;
+    color: #000;
+    border-radius: 1vh;
+
+}
+#btn_reiniciar{
+    width: 80%;
+    height: 60%;
+    border-radius: 1vh;
+    
+}
+
+.cima , .meio, .baixo{
+    display: flex;
+    justify-content: row;
+    width: 100%;
+    height: calc(100%/3);
+}
+
+.lbl_cima_1, .lbl_cima_2, .lbl_cima_3, .lbl_meio_1, .lbl_meio_2 , .lbl_meio_3, .lbl_baixo_1, .lbl_baixo_2 , .lbl_baixo_3{
+    width: calc(100%/3);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10.75vh;
+    color: green;
+}
+.lbl_cima_1{
+    border: 1px solid #000;
+}
+.lbl_cima_2, .lbl_cima_3{
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    border-right: 1px solid #000;
+}
+.lbl_meio_1, .lbl_baixo_1{
+    border-left: 1px solid #000;
+    border-bottom: 1px solid #000;
+    border-right: 1px solid #000;
+}
+.lbl_meio_2, .lbl_meio_3, .lbl_baixo_2, .lbl_baixo_3{
+    border-bottom: 1px solid #000;
+    border-right: 1px solid #000;
+}
+.resultado{
+    color: green;
+    font-size: 50px;
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+
+    .jogo_da_velha{
+        width: 60%;
+        height: 50%;
+    }
+    .jogo_resultado{
+        width: 60%;
+    }
+    .jogo_botao {
+        width: 60%;
+    }
+    #btn_reiniciar{
+        font-size: 2vh;
+    }
+    #resultado{
+        font-size: 2vh;
+    }
+    .lbl_cima_1, .lbl_cima_2, .lbl_cima_3, .lbl_meio_1, .lbl_meio_2 , .lbl_meio_3, .lbl_baixo_1, .lbl_baixo_2 , .lbl_baixo_3{
+        font-size: 8vh;
+        
+    }
+
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    .jogo_da_velha{
+        width: 50%;
+        height: 60%;
+    }
+    .jogo_resultado{
+        width: 50%;
+    }
+    .jogo_botao {
+        width: 50%;
+    }
+    #btn_reiniciar{
+        font-size: 3vh;
+    }
+    #resultado{
+        font-size: 3vh;
+    }
+    .lbl_cima_1, .lbl_cima_2, .lbl_cima_3, .lbl_meio_1, .lbl_meio_2 , .lbl_meio_3, .lbl_baixo_1, .lbl_baixo_2 , .lbl_baixo_3{
+        font-size: 10vh;
+        
+    }
+
+}
+
