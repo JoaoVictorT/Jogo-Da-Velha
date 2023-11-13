@@ -136,3 +136,25 @@ main{
 
 }
 
+@media only screen and (max-width: 480px) {
+    .jogo_da_velha{
+        width: 70%;
+        height: 60%;
+    }
+    .jogo_resultado{
+        width: 70%;
+    }
+    .jogo_botao {
+        width: 70%;
+    }
+    #btn_reiniciar{
+        font-size: 3.2vh;
+    }
+    #resultado{
+        font-size: 3.2vh;
+    }
+    .lbl_cima_1, .lbl_cima_2, .lbl_cima_3, .lbl_meio_1, .lbl_meio_2 , .lbl_meio_3, .lbl_baixo_1, .lbl_baixo_2 , .lbl_baixo_3{
+        font-size: 12vh;
+        
+    } 
+}
